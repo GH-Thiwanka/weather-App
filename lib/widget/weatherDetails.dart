@@ -21,7 +21,7 @@ class _WeatherdetailsState extends State<Weatherdetails> {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width * 0.25, // Responsive width
-      height: MediaQuery.of(context).size.height * 0.2,
+      height: MediaQuery.of(context).size.height * 0.18,
       decoration: BoxDecoration(
         color: Colors.white24,
         borderRadius: BorderRadius.circular(16),

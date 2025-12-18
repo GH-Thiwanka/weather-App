@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:weather/model/weatherModel.dart';
 import 'package:weather/utils/utilFunction.dart';
+import 'package:weather/widget/search.dart';
 import 'package:weather/widget/weatherDetails.dart';
 
 class WeatherDisplay extends StatelessWidget {
@@ -26,13 +27,30 @@ class WeatherDisplay extends StatelessWidget {
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 15, left: 15),
+                    child: Text(
+                      weather.cityName,
+                      style: const TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 35,
+                        color: Colors.black54,
+                      ),
+                    ),
+                  ),
                   Column(
                     //crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Lottie.asset(
-                        UtilFunction().getWeatherAnimation(
-                          condition: weather.conditon,
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.25,
+                        child: Center(
+                          child: Lottie.asset(
+                            UtilFunction().getWeatherAnimation(
+                              condition: weather.conditon,
+                            ),
+                          ),
                         ),
                       ),
                       Column(
