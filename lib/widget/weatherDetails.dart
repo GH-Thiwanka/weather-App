@@ -32,7 +32,11 @@ class _WeatherdetailsState extends State<Weatherdetails> {
           children: [
             Lottie.asset(widget.detail),
             Text(widget.lable),
-            Text(widget.value),
+            widget.lable.toString() == 'Pressure'
+                ? Text('${widget.value} hpa')
+                : widget.lable.toString() == 'Wind Speed'
+                ? Text('${widget.value} m/s')
+                : Text('${widget.value}%'),
           ],
         ),
       ),

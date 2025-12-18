@@ -164,7 +164,9 @@ class _HomepageState extends State<Homepage> {
 
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:provider/provider.dart';
 import 'package:weather/model/weatherModel.dart';
+import 'package:weather/provider/themeProvider.dart';
 import 'package:weather/service/weatherService.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:weather/widget/displayWeather.dart';
@@ -298,7 +300,19 @@ class _HomepageState extends State<Homepage> {
             icon: const Icon(Icons.refresh),
             tooltip: 'Refresh current location',
           ),
-          IconButton(onPressed: () {}, icon: const Icon(Icons.light_mode)),
+          IconButton(
+            onPressed: () {
+              Provider.of<Themeprovider>(
+                context,
+                listen: false,
+              ).toggleTheme(Theme.of(context).brightness != Brightness.dark);
+            },
+            icon: Icon(
+              Theme.of(context).brightness == Brightness.dark
+                  ? Icons.light_mode_rounded
+                  : Icons.dark_mode_rounded,
+            ),
+          ),
         ],
       ),
       body: SingleChildScrollView(
