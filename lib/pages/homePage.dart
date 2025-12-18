@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:weather/model/weatherModel.dart';
 import 'package:weather/service/weatherService.dart';
+import 'package:weather/widget/displayWeather.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -41,8 +42,19 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('HomePage')),
-      body: const Center(child: Text('')),
+      appBar: AppBar(
+        title: Text(
+          _weather?.cityName ?? '',
+          style: TextStyle(fontWeight: FontWeight.w300, fontSize: 35),
+        ),
+        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.light_mode))],
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(15),
+        child: _weather != null
+            ? Column(children: [WeatherDisplay(weather: _weather!)])
+            : const Center(child: CircularProgressIndicator()),
+      ),
     );
   }
 }

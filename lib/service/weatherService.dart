@@ -7,8 +7,6 @@ import 'package:http/http.dart' as http;
 import 'package:weather/service/getlocationService.dart';
 
 class WeatherService {
-  //https://api.openweathermap.org/data/2.5/weather?q=London&appid=c08161133c89dcc4df57dabe7d73c559&units=metric
-
   static const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
   final String apiKey;
 
