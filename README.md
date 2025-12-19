@@ -1,16 +1,51 @@
-# weather
+# 🌦️ Flutter Weather App
 
-A new Flutter project.
+A cross-platform*Weather Application built using Flutter that provides real-time, location-based weather information with a clean and responsive user interface. The app fetches live weather data using the OpenWeatherMap REST API and works smoothly on both Android and iOS devices.
 
-## Getting Started
+<img width="792" height="1785" alt="Screenshot_20251219_163135" src="https://github.com/user-attachments/assets/904901b7-b876-476b-8420-57bcdc17146b" />
+<img width="792" height="1785" alt="Screenshot_20251219_162959" src="https://github.com/user-attachments/assets/0e8b6498-a0d4-4e3f-a23b-65f9400b14dc" />
+<img width="792" height="1785" alt="Screenshot_20251219_163121" src="https://github.com/user-attachments/assets/fb4912b3-c8d3-4c75-9c60-e8d0ad3cddf2" />
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+* Real-time weather updates
+* Location-based weather forecasting
+* Clean and user-friendly UI
+* Responsive design for multiple screen sizes
+* Cross-platform support (Android & iOS)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Technologies Used
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* Flutter
+* Dart
+* OpenWeatherMap REST API
+* HTTP package
+
+## 🚀 Getting Started
+
+1. Clone the repository
+
+   ```
+   git clone https://github.com/your-username/your-repo-name.git
+   ```
+2. Install dependencies
+
+   ```
+   flutter pub get
+   ```
+3. Run the app
+
+   ```
+   flutter run
+   ```
+
+## 📚 Learning Outcomes
+
+* Flutter UI development
+* REST API integration
+* Responsive mobile app design
+* Cross-platform application development
+
+## 👨‍💻 Author
+
+Developed by **Heshan Thiwanka**
