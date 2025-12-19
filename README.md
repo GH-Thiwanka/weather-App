@@ -2,9 +2,9 @@
 
 A cross-platform*Weather Application built using Flutter that provides real-time, location-based weather information with a clean and responsive user interface. The app fetches live weather data using the OpenWeatherMap REST API and works smoothly on both Android and iOS devices.
 
-<img width="792" height="1785" alt="Screenshot_20251219_163135" src="https://github.com/user-attachments/assets/904901b7-b876-476b-8420-57bcdc17146b" />
-<img width="792" height="1785" alt="Screenshot_20251219_162959" src="https://github.com/user-attachments/assets/0e8b6498-a0d4-4e3f-a23b-65f9400b14dc" />
-<img width="792" height="1785" alt="Screenshot_20251219_163121" src="https://github.com/user-attachments/assets/fb4912b3-c8d3-4c75-9c60-e8d0ad3cddf2" />
+<img width="300" height="700" alt="Screenshot_20251219_163135" src="https://github.com/user-attachments/assets/904901b7-b876-476b-8420-57bcdc17146b" />
+<img width="300" height="700" alt="Screenshot_20251219_162959" src="https://github.com/user-attachments/assets/0e8b6498-a0d4-4e3f-a23b-65f9400b14dc" />
+<img width="300" height="700" alt="Screenshot_20251219_163121" src="https://github.com/user-attachments/assets/fb4912b3-c8d3-4c75-9c60-e8d0ad3cddf2" />
 
 ## ✨ Features
 
